@@ -1,6 +1,6 @@
-#if [ -z "$TMUX" ]; then
-#    exec tmux new-session -A -s 0
-#fi
+if [ -z "$TMUX" ]; then
+    exec tmux new-session -A -s 0
+fi
 
 clear() {
   command clear
